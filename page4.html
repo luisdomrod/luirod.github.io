@@ -1,0 +1,236 @@
+<html lang="en">
+
+<html>
+
+<head>
+
+	<title>CANFRANC INTERNATIONAL RAILWAY STATION</title>
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+
+	<nav class="col-12 col-s-12">
+
+		<ul class="menu_movil menu_drop">
+			<li><a href="#menu" class="size_icon"> <i class="fa fa-bars"></i> </a>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="page1.html">ALJAFERIA ZARAGOZA</a></li>
+					<li><a href="page2.html">ALCAZAR SEGOVIA</a></li>
+					<li><a href="page3.html">THE LAGOONS OF RUIDERA</a></li>
+					<li><a href="page4.html">CANFRAN STATION</a></li>
+					<li><a href="page5.html">PUNTA DE ORGANOS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+				</ul>
+
+			</li>
+		</ul>
+
+		<ul class="menu_pc menu_drop col-12">
+			<li class="col-1 col-s-12"><a href="index.html">HOME</a></li>
+			<li class="col-2 col-s-12"><a href="page1.html">ALJAFERIA ZARAGOZA</a></li>
+			<li class="col-2 col-s-12"><a href="page2.html">ALCAZAR SEGOVIA</a></li>
+			<li class="col-2 col-s-12"><a href="page3.html">RUIDERA'S LAGOONS</a></li>
+			<li class="col-2 col-s-12"><a href="page4.html">CANFRAN STATION</a></li>
+			<li class="col-2 col-s-12"><a href="page5.html">PUNTA DE ORGANOS</a></li>
+			<li class="col-1 col-s-12"><a href="gallery.html">GALLERY</a></li>
+
+
+		</ul>
+	</nav>
+
+	<main class="container">
+		<header>
+			<div class="blue2">
+				<h1>THE CANFRANC INTERNATIONAL RAILWAY STATION</h1>
+			</div>
+		</header>
+
+		<section id="about" class="cent blue">
+			<div class="blue3 col-12 col-s-12">
+				<h2>About the canfranc station</h2>
+			</div>
+			<div class="col-2 col-s-0"></div>
+			<div class="col-8 col-s-12">
+				<p>Originally opened on july 28,1928, the Canfranc International Railway Station was the largest railway
+					station
+					in Europe at the time. It was built as a symbol of the close relationship between Spain and France,
+					and was a key transportation hub for international travel and trade.
+
+					Although the station has experienced periods of decline and closure throughout its history, it has
+					undergone extensive restoration efforts in recent years and is now open to visitors. Whether you're
+					interested in the station's history, its stunning architecture, or simply want to take in the beauty
+					of the surrounding Pyrenees Mountains, the Canfranc International Railway Station is an
+					unforgettable destination.</p>
+			</div>
+			<div class="col-2 col-s-0"></div>
+		</section>
+
+		<section id="history">
+			<div class="blue3 col-12 col-s-12">
+				<h2>History of The International Railway Station of Canfranc</h2>
+			</div>
+
+			<div class="col-12 blue cent">
+				<div class="col-2 col-s-0"></div>
+
+				<div class="col-8 col-s-12">
+					<p>The Canfranc International Railway Station was built between 1912 and 1928 as a transportation
+						hub between Spain and France. It was the largest railway station in Europe at the time and
+						played a key role in facilitating international travel and trade.
+
+						During World War II, the station was used to help refugees and resistance fighters escape
+						Nazi-occupied Europe. However, its use declined after the war, and it was eventually closed in
+						1970 due to a derailment.
+
+						In recent years, the station has been restored and is now open to visitors. It has been
+						designated a Site of Cultural Interest by the Spanish government and is a popular destination
+						for tourists from around the world.</p>
+					</p>
+				</div>
+				<div class="col-2 col-s-0"></div>
+
+			</div>
+		</section>
+		<section>
+			<div class="col-12 col-s-12 blue3">
+				<h2>Activities in the station</h2>
+			</div>
+			<div class="col-12 col-s-12 blue cent">
+				<div class="col-2 col-s-0"></div>
+				<div class="col-8 col-s-12">
+					<table id="demo" border="1">
+					</table>
+
+					<script>
+						var xmlhttp = new XMLHttpRequest();
+						xmlhttp.onreadystatechange = function () {
+							if (this.readyState == 4 && this.status == 200) {
+								myFunction(this);
+							}
+						};
+						xmlhttp.open("GET", "activities.xml", true);
+						xmlhttp.send();
+
+						function myFunction(xml) {
+							var i;
+							var xmlDoc = xml.responseXML;
+							var table = "<tr><th>Name</th><th>Description</th><th>Duration</th><th>Price</th></tr>";
+							var x = xmlDoc.getElementsByTagName("activity");
+							for (i = 0; i < x.length; i++) {
+								table += "<tr><td>" +
+									x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+									"</td><td>" +
+									x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+									"</td><td>" +
+									x[i].getElementsByTagName("duration")[0].childNodes[0].nodeValue +
+									"</td><td>" +
+									x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue +
+									"</td></tr>";
+							}
+							document.getElementById("demo").innerHTML = table;
+						}
+					</script>
+				</div>
+				<div class="col-2 col-s-0"></div>
+
+
+
+		</section>
+		<section id="visit">
+			<div class="col-12 col-s-12 blue3">
+				<h2>Visit The International Railway Station of Canfranc </h2>
+			</div>
+			<div class="col-12 col-s-12 blue cent">
+				<div class="col-2 col-s-0"></div>
+				<div class="col-8 col-s-12">
+					<p>The Canfranc International Railway Station offers guided tours,
+						providing visitors with a detailed look at the station's history and architecture.
+						You can also explore the station on your own and stop by the station's hotel, which has been
+						restored
+						to its former glory and is now open to visitors.</p>
+				</div>
+			</div>
+			<div class="col-2 col-s-0"></div>
+			</div>
+			<div class="col-12 col-s-12 cent space">
+				<div class="col-5 col-s-12 bblue">
+					<h3>Admission Prices</h3>
+					<ul>
+						<li>General Admission: €8</li>
+						<li>Reduced Admission (students, seniors): €6</li>
+						<li>Free Admission (children under 8, disabled visitors)</li>
+					</ul>
+				</div>
+				<div class="col-5 col-s-12 bblue">
+					<h3>Guided Tours</h3>
+					<ul>
+						<li>General Tour: €10 per person (must be booked in advance)</li>
+						<li>Special Tour (includes access to restricted areas): €20 per person (must be booked in
+							advance)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="cent blue">
+				<div class="col-2 col-s-0"></div>
+				<div class="col-8 col-s-12">
+					<p>Please note that admission and tour prices may be subject to change. Check the official website
+						for up-to-date information.</p>
+					<ul>
+						<li>Address: Estación Internacional de Canfranc, Plaza de la Estación, s/n, 22880 Canfranc
+							Estación, Huesca, Spain</li>
+						<li>Phone: +34 974 37 70 00</li>
+						<li>Email: info@canfranc.es</li>
+						<li><a href="https://www.canfranc.es/en/visit-the-station/">Official website</a></li>
+					</ul>
+				</div>
+				<div class="col-2 col-s-0"></div>
+			</div>
+
+			</div>
+		</section>
+
+		<section>
+			<div class="blue3">
+				<h2>Virtual Visit</h2>
+			</div>
+			<div class="col-12 col-s-12 cent">
+				<iframe class=" size col-8 col-s-12"
+					src="https://www.google.com/maps/embed?pb=!4v1683810127001!6m8!1m7!1sCAoSLEFGMVFpcE9FT3BCbTM0czdTU2hfUjFMbkp3T21Id0MyZklZRXRmM3FvdVhy!2m2!1d42.7515295!2d-0.5142998!3f18.689615694506614!4f12.171518931724734!5f0.7820865974627469"></iframe>
+			</div>
+		</section>
+	</main>
+
+	<footer class=" col-12 col-s-12">
+		<div class="white col-3 col-s-3">
+			<p>17 Market Street, Ashworthshire
+				OX14 0JF, England</p>
+		</div>
+
+
+		<div class="white col-4 col-s-4">
+			<p>© This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike
+				International license 4.0</p>
+		</div>
+		<div class=" cent white col-2 col-s-2">
+			<a href="page6.html">CONTACT US</a></li>
+		</div>
+		<div class="cent  col-2 col-s-2">
+			<a href="#top"><i class="fa fa-caret-square-o-up"></i></a>
+			<a href="#top" class="go-up">Go Up</a>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>

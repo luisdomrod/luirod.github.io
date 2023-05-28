@@ -1,0 +1,354 @@
+/*control how the width and height of an HTML element is calculated.*/
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*This is the body, defined the background color and the margin of the webpage*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #498491;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+/*This is used to change the background color of the web page*/
+main {
+    background-color: #BBD2D6;
+}
+
+/*This is the style of the paragraph*/
+p {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*used to change the color of the top part of the document*/
+
+/*All the types of tittles, the h1 has a extra large size*/
+h1 {
+    color: #ffffff;
+    justify-content: center;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+h3 {
+    color: #165369;
+    text-align: center;
+}
+
+/*This is the link's style*/
+a {
+    color: #E9F0F2;
+    text-decoration: none;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #628395;
+    color: #ffffff;
+    text-align: center;
+}
+
+th {
+    background-color: #033F63;
+}
+
+tr {
+    background-color: #77A3AD;
+}
+
+section {
+    margin-bottom: 2%;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*all the styles of the footer*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #03395A;
+    padding: 4%;
+}
+
+/*here starts the classes*/
+
+.none {
+    list-style: none;
+}
+
+/*class used to modify the button to go up in the footer */
+.go-up {
+    display: block;
+    padding: 7%;
+    border: 1px solid #ffffff;
+    border-radius: 10%;
+}
+
+/*class used to change the border of multiples element of the page*/
+.white {
+    border: white solid 1px;
+}
+
+/*different shades of blue to change the bacround color of the tittles*/
+.bblue {
+    border: #03395A solid 2px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.blue2 {
+    background-color: #03395A;
+}
+
+.blue3 {
+    background-color: #498491;
+}
+
+.blue {
+    background-color: #77A3AD;
+}
+
+.pad {
+    padding: 3%;
+}
+
+/*differents types of containers*/
+.size {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*used to center multiples elements of the document*/
+.cent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.space {
+    justify-content: space-around;
+}
+
+/*ul{
+    background-color: #498491;
+}*/
+
+/*Here stars all the style of the main manu and the drop one */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+nav{
+    background-color: #03395A;
+    padding: 2%;
+}
+
+.menu_drop>li>a {
+    background-color: #498491;
+    color: white;
+    padding-top: 10px;
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #03395a solid;
+
+
+}
+
+/*Nested list*/
+.menu_drop>li>ul>li>a {
+    background-color: #498491;
+    padding: 1%;
+    border: solid black 1px;
+    padding: 5%;
+
+    display: block;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+
+}
+
+/*List and nested list*/
+.menu_drop li>a:hover {
+    color: black;
+    background-color: lightgrey;
+
+}
+
+/*By default the nested list is hidden*/
+.menu_drop>li>ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    /*the dropdown is over the content*/
+}
+
+/*When you (hovering) roll the cursor over the item, the drop-down-menu appears*/
+.menu_drop>li:hover>ul {
+    display: flex;
+}
+
+.menu_pc {
+    display: none;
+    border: solid;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    .menu_movil {
+        display: none;
+    }
+
+    .menu_pc {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}

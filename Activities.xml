@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<activities>
+    <activity>
+        <name>Guided Tour of the Station</name>
+        <description>Take a guided tour of Canfranc Station accompanied by a knowledgeable guide who will explain its history and architecture.</description>
+        <duration>1 hour</duration>
+        <price>10.00</price>
+    </activity>
+    <activity>
+        <name>Hiking in the Pyrenees</name>
+        <description>Enjoy beautiful hiking trails that start from the station and explore the mountain landscapes of the Pyrenees.</description>
+        <duration>Half day</duration>
+        <price>Free</price>
+    </activity>
+    <activity>
+        <name>Visit the International Railway Station Museum</name>
+        <description>Explore the museum located at the station, which showcases the history and interesting facts about this iconic place.</description>
+        <duration>2 hours</duration>
+        <price>5.00</price>
+    </activity>
+    <activity>
+        <name>Skiing at Candanchú</name>
+        <description>Take advantage of the proximity of Canfranc Station to the Candanchú ski resort and enjoy a day on the snowy slopes.</description>
+        <duration>Full day</duration>
+        <price>Check prices</price>
+    </activity>
+</activities>

@@ -1,0 +1,52 @@
+body{
+  background-color: #03395A;
+}
+
+img {
+  width: 90%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  background-color: #ffff;
+  
+}
+
+.gallery img {
+
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.gallery img:hover {
+  filter: brightness(90%);
+}
+
+.gallery img:active {
+  filter: brightness(70%);
+  transform: scale(1.1);
+}
+
+.gallery img:focus {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.8);
+  outline: none;
+    }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/page6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="blue3">CONTACT FORM</h1>
+        <form class="form-container">
+            <div class="container">
+                <label>NAME: <input type="text" id="name" required></label>
+                <label>SECOND NAME: <input type="text" id="second" required></label>
+                <label>THIRD NAME: <input type="text" id="third" required></label>
+            </div>
+
+            <label>DATE OF BIRTH: <input type="date" id="birth" required></label>
+
+            <label>CITY:<input type="text" id="city" required></label>
+
+            <label>COUNTRY:<input type="text" id="country" required></label>
+
+            <label>SEX:</label>
+            <select id="sex" required>
+
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+            <label>EMAIL:<input type="email" id="email" required></label>
+
+            <label>PHONE NUMBER:<input type="tel" id="phone" required></label>
+
+
+            <p>*Leave your comment or your suggestion, we will take it into account to improve the page*</p>
+            <textarea id="message" required></textarea></label>
+
+            <div class="butcont col-7">
+                <button class= "col-3"type="button" onclick="submitForm()">SUBMIT</button>
+                <button class= "col-3"type="button" onclick="home()">BACK HOME</button>            
+            </div>
+        </form>
+</body>
+</main>
+
+<script>
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var sname = document.getElementById("second").value;
+        var tname = document.getElementById("third").value;
+        var city = document.getElementById("city").value;
+        var country = document.getElementById("country").value;
+        var sex = document.getElementById("sex").value;
+        var email = document.getElementById("email").value;
+     
+
+        if (name == "") {
+            alert("The field NAME is mandatory");
+
+        }
+        else if (sname == "") {
+            alert("The field  SECOND NAME is mandatory");
+
+        }
+        else if (city == "") {
+            alert("The field  CITY is mandatory");
+        }
+        else if (country == "") {
+            alert("The field COUNTRY is mandatory");
+        }
+        else if (sex == "") {
+            alert("The field SEX is mandatory");
+        }
+
+        else if (email == "") {
+            alert("The field EMAIL is mandatory");
+        }
+        else {
+            alert("Formulario enviado correctamente!");
+        }
+    }
+
+    function home(){
+        window.location.href = "index.html";
+  }
+    
+</script>
+</body>
+
+</html>

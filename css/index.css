@@ -1,0 +1,99 @@
+
+/*in this document there is only the style needed for the index.html document, the rest is in common.css*/
+
+/*Here starts the style of the table*/
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    height: 430px;
+}
+
+
+
+/*Here ends the style of the table*/
+
+/*Here starts the style of the description list*/
+dl {
+    list-style-type: disc;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    text-align: justify;
+    margin-bottom: 2%;
+}
+
+.list {
+
+    border: solid #628395 2px;
+    color: #ffffff;
+    padding: 3%
+}
+
+/*Here ends the style of the description list*/
+
+/*This is the style of the images, i put 50% because i wanted a smaller images*/
+img {
+    width: 50%;
+    height: auto;
+}
+
+
+iframe {
+    height: 600px;
+}
+
+/*This is a simple flex-contaier used in different times*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*The same as the previous container, but changing the flex-direction, used to align
+th table whit her tittle*/
+.container_alignh3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*differents containers used by different needs (images and table)*/
+
+.container_around {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+    justify-content: space-around;
+}
+
+.container_img {
+ 
+    border: solid #628395 2px;
+    display: flex;
+    background-color: #77A3AD;
+    align-items: right;
+    justify-content: space-around;
+}
+
+.borderimg{
+    border: solid #03395A 2px;
+    background-color: #03395A;
+    font-weight: bold;
+    font-size: large;
+    color:#ffffff;
+}
+
+.sizee{
+    width: 44%;
+}
+
+.cente {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
